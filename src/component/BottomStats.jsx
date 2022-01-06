@@ -17,6 +17,8 @@ export default function BottomStats() {
   return (
     <div className="bottom-stats-container">
       <div className="bottom-bar">
+        <h2 style={{ padding: "10px" }}>Bar NFT's</h2>
+
         <ResponsiveContainer width={500} height={300}>
           <BarChart
             width={500}
@@ -40,6 +42,8 @@ export default function BottomStats() {
         </ResponsiveContainer>
       </div>
       <div className="bottom-line">
+        <h2 style={{ padding: "10px" }}>Line NFT's</h2>
+
         <ResponsiveContainer width={500} height={300}>
           <AreaChart
             width={500}

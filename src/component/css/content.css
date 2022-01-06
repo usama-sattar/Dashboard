@@ -1,11 +1,12 @@
 .content-container {
-  width: 100%;
+  width: 90%;
   margin: 30px;
 }
 .top-stats-container {
   width: 100%;
   display: flex;
   justify-content: flex-start;
+  margin-top: 10px;
 }
 .lh-stats {
   display: flex;
@@ -15,14 +16,19 @@
 .rh-graph {
   width: 100%;
   background-color: #3837375c;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 .middle-stats-container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
 .lh-table {
-  width: 50%;
+  width: 45%;
 }
 .trending-table {
   background-color: #3837375c;
@@ -41,10 +47,9 @@
   background-color: #383737a6;
 }
 .rh-trending {
-  width: 60%;
+  width: 45%;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .lg-box {
   width: 80%;
@@ -58,7 +63,6 @@
 .card {
   width: 200px;
   min-height: 160px;
-  margin-top: 10px;
   margin-right: 10px;
   border-radius: 5px;
   background-color: #3837375c;
@@ -66,12 +70,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-bottom: 10px;
 }
 
 .line-gr-container {
   width: 100%;
   margin-top: 40px;
-  overflow: hidden;
   min-height: fit-content;
   background-color: #3837375c;
 }
@@ -80,6 +84,7 @@
   margin-top: 20px;
   width: 100%;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .bottom-stats-container {
   width: 100%;
@@ -118,5 +123,35 @@
 .prog-container {
   margin-top: 20px;
 }
-@media only screen and (max-width: 768) {
+@media only screen and (max-width: 768px) {
+  .top-stats-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .rh-graph {
+    width: 80%;
+    margin-top: 20px;
+  }
+  .lh-table {
+    width: 80%;
+  }
+  .middle-stats-container,
+  .bottom-stats-container {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .rh-trending {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .lg-box {
+    width: 80%;
+  }
+  .line-gr-container {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+  }
 }

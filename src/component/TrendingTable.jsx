@@ -4,7 +4,9 @@ import ProgressBar from "@ramonak/react-progress-bar";
 export default function TrendingTable() {
   return (
     <div className="trending-table">
-      <div className="header">Table</div>
+      <div className="header">
+        <h2>NFT's</h2>
+      </div>
       {tabledata.map((row, i) => {
         return (
           <div className="row">

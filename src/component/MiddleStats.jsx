@@ -52,6 +52,7 @@ export default function MiddleStats() {
           </PieChart>
         </div>
         <div className="prog-lg-box">
+          <h2>Trending NFT's</h2>
           {tabledata.map((row, i) => {
             return (
               <div className="prog-container">

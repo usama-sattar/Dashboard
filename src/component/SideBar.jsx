@@ -12,10 +12,10 @@ export default function SideBar() {
       {navitem.map((item, i) => {
         return (
           <div className="nav-item">
-            <span>
+            <span className="icon">
               <i className={item.icon}></i>
             </span>
-            <span>{item.name}</span>
+            <span className="text">{item.name}</span>
           </div>
         );
       })}

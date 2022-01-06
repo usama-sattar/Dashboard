@@ -13,6 +13,7 @@ import { bar } from "../data";
 export default function LineGraph() {
   return (
     <div className="line-gr-container">
+      <h2 style={{ padding: "10px" }}>Trending NFT's</h2>
       <ResponsiveContainer width="100%" height={400}>
         <LineChart
           width={500}

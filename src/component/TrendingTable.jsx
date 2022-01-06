@@ -9,7 +9,7 @@ export default function TrendingTable() {
       </div>
       {tabledata.map((row, i) => {
         return (
-          <div className="row">
+          <div className="row" key={i}>
             <span>{row.name}</span>
             <span>{row.price}</span>
             <span>

@@ -11,7 +11,7 @@ export default function SideBar() {
     <div className="sidebar-container">
       {navitem.map((item, i) => {
         return (
-          <div className="nav-item">
+          <div className="nav-item" key={i}>
             <span className="icon">
               <i className={item.icon}></i>
             </span>

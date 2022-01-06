@@ -55,7 +55,7 @@ export default function MiddleStats() {
           <h2>Trending NFT's</h2>
           {tabledata.map((row, i) => {
             return (
-              <div className="prog-container">
+              <div className="prog-container" key={i}>
                 <span>
                   <ProgressBar
                     completed={60}
